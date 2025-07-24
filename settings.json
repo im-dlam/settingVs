@@ -1,0 +1,89 @@
+
+{
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.fixAll": ["source.unusedImports"],  
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontFamily": "JetBrains Mono",
+    "terminal.integrated.suggest.enabled": true,
+    "files.autoSave": "afterDelay",
+    "editor.inlineSuggest.edits.showCollapsed": true,
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.pyc": "default",
+        "*.py": "default"
+    },
+    "github.copilot.enable": {
+        "*": false
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.minimap.maxColumn": 30,
+    "liveServer.settings.donotVerifyTags": true,
+    "redhat.telemetry.enabled": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "code-runner.runInTerminal": true,
+    "explorer.compactFolders": false,
+    "python.defaultInterpreterPath": "c:\\msys64\\ucrt64\\bin\\python.exe",
+    "terminal.integrated.fontFamily": "monospace",
+    "editor.tokenColorCustomizations": {
+  "textMateRules": [
+    {
+      "scope": [
+        "keyword.control.import.python",
+        "keyword.control.flow.python", // áp dụng cho return, if, else, ...
+        "keyword.control.import", // cho các ngôn ngữ khác
+        "keyword"
+      ],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.import",            // Tên thư viện khi import
+        "support.type",                  // Đôi khi dùng cho tên thư viện
+        "variable.import",               // Một số theme dùng scope này
+        "entity.name.namespace",         // Một số theme dùng scope này
+        "support.other.namespace.use",    // Một số theme dùng cho import,
+        
+      ],
+      "settings": {
+        "foreground": "#7FDBCA"          // Mã màu vàng cam như trong ảnh (có thể thử #ffd787, #e6c07b, #e7c664)
+      }
+    },
+    {
+      // Tên class/function (FastAPI) - XANH
+      "scope": [
+        "entity.name.class",
+        "support.class",
+        "entity.name.type.class",
+        "entity.name.type",
+        "entity.name",
+        "variable.other.class",
+        "meta.class",
+        "meta.function-call.generic.python"
+      ],
+      "settings": {
+        "foreground": "#7FDBCA" // xanh cyan
+      }
+    },
+    {
+      // Đổi màu chuỗi (string)
+      "scope": [
+        "string.quoted.single",
+        "string.quoted.double",
+        "string.quoted",
+        "string"
+      ],
+      "settings": {
+        "foreground": "#e5edb2"  // Mã màu vàng nhạt giống ảnh (bạn có thể thử #e5edb2, #f8f8c6, #e0e68a)
+      }
+    }
+  ]
+}
+}
